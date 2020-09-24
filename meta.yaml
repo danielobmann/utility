@@ -1,0 +1,24 @@
+{% set name = "utility" %}
+{% set version = "0.0.1" %}
+
+package:
+ name: "{{ name|lower }}"
+ version: "{{ version }}"
+
+source:
+        url: https://github.com/danielobmann/utility.git
+
+requirements:
+        build:
+                -python
+                -numpy
+                -tensorflow
+        run:
+                -python
+
+test:
+        imports:
+                -utility
+
+about:
+        home: https://github.com/danielobmann/utility
