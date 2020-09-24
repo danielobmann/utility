@@ -1,3 +1,3 @@
-from . import utility
+from .utility import *
 
 __all__ = ['utility']
