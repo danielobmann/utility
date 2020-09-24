@@ -1,5 +1,3 @@
-from utility.misc import *
-from utility.losses import *
-from utility.metrics import *
+from . import utility
 
 __all__ = ['utility']
